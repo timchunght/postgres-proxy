@@ -43,6 +43,11 @@ func getAnnotations(m []byte) map[AnnotationType]bool {
 	 * an annotation was not found.
 	 */
 	if startPos < 0 || endPos < 0 {
+		prefix := "select"
+		isSelect := strings.HasPrefix(strings.ToLower(strings.TrimSpace(query)), prefix)
+		if isSelect {
+			annotations[ReadAnnotation] = true
+		}
 		return annotations
 	}
 

@@ -1,5 +1,4 @@
 # ignore build/dependency related directories
-vendor
 build
 dist
 docs/pdf
@@ -10,3 +9,5 @@ docs/pdf
 
 *.swp
 *.retry
+
+gin-bin
