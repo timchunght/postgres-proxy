@@ -10,3 +10,5 @@ docs/pdf
 
 *.swp
 *.retry
+
+gin-bin
